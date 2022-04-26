@@ -17,7 +17,7 @@ for test in range(len(x_test)):
                 x_test[test][row][x] = 1
 
 
-model = tf.keras.models.load_model('m.model')
+model = tf.keras.models.load_model('epic_num_reader.model')
 print(len(x_test))
 predictions = model.predict(x_test[:10])
 
